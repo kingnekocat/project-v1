@@ -13,8 +13,8 @@
 			<td colspan="2">${sessionScope.loginMember.m_id }님 어서오세요.</td>
 		</tr>
 		<tr>
-			<td><a onclick="">내정보</a></td>
-			<td><a onclick="location.href='logout.go'">로그아웃</a></td>
+			<td><a onclick="location.href='info.go'">내정보</a></td>
+			<td><a onclick="logoutgo()">로그아웃</a></td>
 		</tr>
 	</table>
 </body>

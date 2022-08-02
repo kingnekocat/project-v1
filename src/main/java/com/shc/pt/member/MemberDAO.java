@@ -84,4 +84,90 @@ public class MemberDAO {
 		req.getSession().setAttribute("loginMember", null);
 	}
 
+	public void update(Member m, HttpServletRequest req) {
+		
+		String path = req.getSession().getServletContext().getRealPath("resources/files");
+		MultipartRequest mr = null;
+		
+		try {
+		mr = new MultipartRequest(req, path, 10 * 1024 * 1024, "utf-8", new DefaultFileRenamePolicy());	
+		String newphoto = mr.getFilesystemName("m_photo");
+		String oldphoto = mr.getParameter("oldphoto");
+		String m_nickname = mr.getParameter("m_nickname");
+		String newaddr = mr.getParameter("m_addr");
+		String oldaddr = mr.getParameter("oldaddr");
+		String newfav = mr.getParameter("m_fav");
+		String oldfav = mr.getParameter("oldfav");
+		String m_id = mr.getParameter("m_id");
+		
+		String photo = null;
+		String addr = null;
+		String fav = null;
+			
+		if(newphoto == null) {
+		photo = oldphoto;
+		}else {
+		photo = newphoto;	
+		}
+		
+		if(newaddr == null) {
+		addr = oldaddr;	
+		}else {
+		addr = newaddr;	
+		}
+		
+		if(newfav == null){
+		fav = oldfav;	
+		}else {
+		fav = newfav;	
+		}
+		
+		System.out.println(m_id);
+		m.setM_id(m_id);
+		m.setM_photo(photo);	
+		m.setM_nickname(m_nickname);
+		m.setM_fav(fav);
+		m.setM_addr(addr);
+		
+		if(ss.getMapper(MemberMapper.class).update(m)==1) {
+			req.getSession().setAttribute("loginMember", m);
+			req.setAttribute("result", "수정성공");
+		}else {
+			req.setAttribute("result", "수정실패");
+		}
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void deletem(HttpServletRequest req) {
+		
+		try {
+			
+		Member m = (Member)req.getSession().getAttribute("loginMember");
+		
+		if(ss.getMapper(MemberMapper.class).deletem(m)==1) {
+			req.setAttribute("result", "탈퇴성공");
+			logout(req);
+			loginCheck(req);
+		}else {
+			req.setAttribute("result", "탈퇴실패");
+		}
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
 }

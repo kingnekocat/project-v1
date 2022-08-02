@@ -21,10 +21,10 @@
 
 	<table border="1" id="menuTbl" style="width: 1000px; height: 80px; text-align: center;">
 		<tr>
-			<td><a>메뉴</a></td>
-			<td><a>메뉴</a></td>
-			<td><a>메뉴</a></td>
-			<td><a>메뉴</a></td>
+			<td><a onclick="">메뉴</a></td>
+			<td><a onclick="">메뉴</a></td>
+			<td><a onclick="">메뉴</a></td>
+			<td><a onclick="">메뉴</a></td>
 		</tr>
 	</table>
 

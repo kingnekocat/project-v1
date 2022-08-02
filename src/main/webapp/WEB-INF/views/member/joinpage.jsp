@@ -9,6 +9,14 @@
 </head>
 <body>
 
+	<table id="homePageTbl" border="1"
+		style="width: 1700px; height: 150px; text-align: center;">
+		<tr>
+			<td width="1000px;"><a onclick="location.href='home.go'"
+				style="font-size: 45px;">홈페이지</a></td>
+		</tr>
+	</table>
+
 	<form action="join.go" method="post" enctype="multipart/form-data">
 		<table border="1" id="joinPageTbl">
 			<tr>

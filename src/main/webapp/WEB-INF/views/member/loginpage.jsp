@@ -9,8 +9,17 @@
 </head>
 <body>
 
+	<table id="homePageTbl" border="1"
+		style="width: 1700px; height: 150px; text-align: center;">
+		<tr>
+			<td width="1000px;"><a onclick="location.href='home.go'"
+				style="font-size: 45px;">홈페이지</a></td>
+		</tr>
+	</table>
+
 	<form action="login.go" method="post">
-		<table id="loginPageTbl" border="1" style="width: 300px; height: 150px; text-align: center;">
+		<table id="loginPageTbl" border="1"
+			style="width: 300px; height: 150px; text-align: center;">
 			<tr>
 				<td>ID <input name="m_id"></td>
 			</tr>
@@ -19,7 +28,7 @@
 			</tr>
 			<tr>
 				<td><button>로그인</button>
-				<button type="button" onclick="location.href='joinpage.go'">회원가입</button></td>
+					<button type="button" onclick="location.href='joinpage.go'">회원가입</button></td>
 			</tr>
 		</table>
 	</form>

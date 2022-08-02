@@ -6,6 +6,10 @@ public interface MemberMapper {
 
 	int join(Member m);
 
+	int update(Member m);
+
+	int deletem(Member m);
+
 
 
 }

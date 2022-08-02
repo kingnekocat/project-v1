@@ -10,5 +10,18 @@
 	insert into pjmember values(#{m_id},#{m_pw},#{m_photo},#{m_name},#{m_nickname},#{m_addr},#{m_fav})
 </insert>
 
+<update id="update" parameterType="com.shc.pt.member.Member">
+		update pjmember
+		set m_photo=#{m_photo},
+		m_nickname=#{m_nickname}, m_addr=#{m_addr}, m_fav=#{m_fav}
+		where
+		m_id=#{m_id}
+</update>
+
+<delete id="deletem"
+		parameterType="com.shc.pt.member.Member">
+		delete from pjmember
+		where m_id = #{m_id}	
+</delete>
 
 </mapper>

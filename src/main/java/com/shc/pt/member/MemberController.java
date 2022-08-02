@@ -50,5 +50,25 @@ public class MemberController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/info.go", method = RequestMethod.GET)
+	public String infoGo(Member m ,HttpServletRequest req) {
+		
+		return "member/info";
+	}
+	
+	@RequestMapping(value = "/update.go", method = RequestMethod.POST)
+	public String updateGo(Member m ,HttpServletRequest req) {
+		mDAO.update(m, req);
+		return "member/info";
+	}
+	
+	@RequestMapping(value = "/deletem.go", method = RequestMethod.GET)
+	public String deletemGo(HttpServletRequest req) {
+		mDAO.deletem(req);
+		req.setAttribute("contentPage", "home.jsp");
+		return "index";
+	}
+	
+	
 	
 }

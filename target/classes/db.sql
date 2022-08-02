@@ -11,3 +11,6 @@ m_fav varchar2(30 char) not null
 select * from pjmember;
 
 insert into pjmember values('aa','123','이미지','이름','기모띠','주소','선호장르');
+
+-----------------------------------------------------------------------
+
