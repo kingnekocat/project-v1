@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.shc.pt.MemberMapper">
+<mapper namespace="com.shc.pt.member.MemberMapper">
 
+<select id="getMemberByID" resultType="com.shc.pt.member.Member">
+	select * from pjmember where m_id = #{m_id}
+</select>
 
-
-
+<insert id="join">
+	insert into pjmember values(#{m_id},#{m_pw},#{m_photo},#{m_name},#{m_nickname},#{m_addr},#{m_fav})
+</insert>
 
 
 </mapper>
