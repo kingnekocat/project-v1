@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="resources/css/sitecss.css">
 </head>
 <body>
 
 	<form action="join.go" method="post" enctype="multipart/form-data">
-		<table border="1">
+		<table border="1" id="joinPageTbl">
 			<tr>
 				<td>ID</td>
 				<td><input name="m_id"></td>

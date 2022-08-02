@@ -11,9 +11,10 @@
 <body>
 
 	<table id="homePageTbl" border="1"
-		style="width: 1200px; height:150px; text-align: center;">
+		style="width: 1700px; height:150px; text-align: center;">
 		<tr>
-			<td width="1000px;"><a onclick="location.href='home.go'" style="font-size: 20px;">홈페이지</a></td>
+			<td width="350px;"></td>
+			<td width="1000px;"><a onclick="location.href='home.go'" style="font-size: 45px;">홈페이지</a></td>
 			<td style="text-align: center;" ><jsp:include page="${loginPage }"></jsp:include></td>
 		</tr>
 	</table>

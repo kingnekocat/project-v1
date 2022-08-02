@@ -80,4 +80,8 @@ public class MemberDAO {
 
 	}
 
+	public void logout(HttpServletRequest req) {
+		req.getSession().setAttribute("loginMember", null);
+	}
+
 }

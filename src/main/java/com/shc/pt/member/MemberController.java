@@ -42,5 +42,13 @@ public class MemberController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/logout.go", method = RequestMethod.GET)
+	public String logoutGo(Member m ,HttpServletRequest req) {
+		mDAO.logout(req);
+		mDAO.loginCheck(req);
+		req.setAttribute("contentPage", "home.jsp");
+		return "index";
+	}
+	
 	
 }

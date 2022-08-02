@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="resources/css/sitecss.css">
 </head>
 <body>
 
 	<form action="login.go" method="post">
-		<table border="1" style="width: 300px; height: 150px; text-align: center;">
+		<table id="loginPageTbl" border="1" style="width: 300px; height: 150px; text-align: center;">
 			<tr>
 				<td>ID <input name="m_id"></td>
 			</tr>

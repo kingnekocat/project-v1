@@ -9,11 +9,12 @@
 <body>
 	<table border="1">
 		<tr>
+			<td rowspan="2"><img style="width: 100px;" src="resources/files/${sessionScope.loginMember.m_photo }"></td>
 			<td colspan="2">${sessionScope.loginMember.m_id }님 어서오세요.</td>
 		</tr>
 		<tr>
-			<td>내정보</td>
-			<td>로그아웃</td>
+			<td><a onclick="">내정보</a></td>
+			<td><a onclick="location.href='logout.go'">로그아웃</a></td>
 		</tr>
 	</table>
 </body>
