@@ -10,3 +10,10 @@ function deletemGo() {
 		location.href = "deletem.go";
 	}
 }
+
+function animationdeleteGO(n) {
+	var ok = confirm("삭제 하시겠습니까?");
+	if (ok) {
+		location.href = "animationdelete.go?a_no="+n;
+	}
+}

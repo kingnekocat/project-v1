@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shc.pt.animation.AnimationMapper">
+
+<select id="getloveco" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_genre = #{a_genre}
+</select>
+
+<delete id="animationdelete" parameterType="com.shc.pt.animation.Animation">
+	delete from animation where a_no = #{a_no}
+</delete>
+
+<insert id="reg" parameterType="com.shc.pt.animation.Animation">
+	insert into animation values(animation_seq.nextval,#{a_title},#{a_txt},#{a_photo},#{a_genre})
+</insert>
+
+<select id="getfantasy" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_genre = #{a_genre}
+</select>
+
+<select id="getromance" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_genre = #{a_genre}
+</select>
+
+<select id="getaction" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_genre = #{a_genre}
+</select>
+
+<select id="getsf" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_genre = #{a_genre}
+</select>
+
+
+
+
+
+
+
+
+</mapper>

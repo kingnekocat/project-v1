@@ -59,7 +59,9 @@ public class MemberController {
 	@RequestMapping(value = "/update.go", method = RequestMethod.POST)
 	public String updateGo(Member m ,HttpServletRequest req) {
 		mDAO.update(m, req);
-		return "member/info";
+		mDAO.loginCheck(req);
+		req.setAttribute("contentPage", "home.jsp");
+		return "index";
 	}
 	
 	@RequestMapping(value = "/deletem.go", method = RequestMethod.GET)

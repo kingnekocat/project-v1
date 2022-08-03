@@ -14,3 +14,30 @@ insert into pjmember values('aa','123','이미지','이름','기모띠','주소'
 
 -----------------------------------------------------------------------
 
+create table animation(
+a_no number(5) primary key,
+a_title varchar2(300 char) not null,
+a_txt varchar2(500 char) not null,
+a_photo varchar2(300 char) not null,
+a_genre varchar2(300 char) not null
+);
+
+select * from animation;
+
+create sequence animation_seq;
+
+insert into animation values(animation_seq.nextval,'SF','내용','사진','SF');
+insert into animation values(animation_seq.nextval,'로맨스','내용','사진','로맨스');
+insert into animation values(animation_seq.nextval,'액션','내용','사진','액션');
+insert into animation values(animation_seq.nextval,'스릴러','내용','사진','스릴러');
+
+delete animation where a_no = 19;
+
+
+
+
+
+
+
+
+
