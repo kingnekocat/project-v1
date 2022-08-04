@@ -22,7 +22,7 @@
 	<table border="1" id="menuTbl" style="width: 1000px; height: 80px; text-align: center;">
 		<tr>
 			<td><a onclick="location.href='animationgenre.go'">Animation</a></td>
-			<td><a onclick="">Review</a></td>
+			<td><a onclick="location.href='reviewpage.go'">Review</a></td>
 			<td><a onclick="">Community</a></td>
 			<td><a onclick="">Shop</a></td>
 		</tr>

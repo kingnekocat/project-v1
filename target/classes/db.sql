@@ -33,11 +33,23 @@ insert into animation values(animation_seq.nextval,'스릴러','내용','사진'
 
 delete animation where a_no = 19;
 
+-------------------------------------------------------------------
 
+create table a_review(
+r_no number(5) primary key,
+r_writer varchar2(300 char) not null,
+r_photo varchar2(300 char) not null,
+r_title varchar2(300 char) not null,
+r_txt varchar2(300 char) not null,
+r_date date not null
+);
 
+create sequence a_review_seq;
 
+select * from a_review;
 
-
-
+insert into a_review values(a_review_seq.nextval,'작성자','사진','제목','내용',sysdate);
+insert into a_review values(a_review_seq.nextval,'작성자2','사진','제목','내용',sysdate);
+insert into a_review values(a_review_seq.nextval,'작성자3','사진','제목','내용',sysdate);
 
 
