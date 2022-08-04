@@ -144,12 +144,6 @@ public class AnimationDAO {
 			genre = oldgenre;
 		}
 		
-		System.out.println(title);
-		System.out.println(txt);
-		System.out.println(photo);
-		System.out.println(genre);
-		System.out.println(no);
-		
 		a.setA_title(title);
 		a.setA_txt(txt);
 		a.setA_photo(photo);
