@@ -30,9 +30,17 @@
 			select * from animation where a_genre = #{a_genre}
 </select>
 
+<select id="getone" resultType="com.shc.pt.animation.Animation">
+			select * from animation where a_no = #{a_no}
+</select>
 
-
-
+<update id="animationupdate" parameterType="com.shc.pt.animation.Animation">
+		update animation
+		set a_title=#{a_title},
+		a_txt=#{a_txt}, a_photo=#{a_photo}, a_genre=#{a_genre}
+		where
+		a_no=#{a_no}
+</update>
 
 
 

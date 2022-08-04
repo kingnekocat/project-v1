@@ -99,6 +99,24 @@ public class AnimationController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/animationupdatepage.go", method = RequestMethod.GET)
+	public String animationupdatego(Animation a ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		aDAO.getone(a,req);
+		req.setAttribute("contentPage", "animation/update.jsp");
+		return "index";
+	}
+	
+	@RequestMapping(value = "/animationupdate.go", method = RequestMethod.POST)
+	public String updatego(Animation a ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		aDAO.animationupdate(a,req);
+		req.setAttribute("contentPage", "animation/genre.jsp");
+		return "index";
+	}
+	
 	
 	
 	

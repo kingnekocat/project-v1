@@ -18,6 +18,11 @@ public interface AnimationMapper {
 
 	List<Animation> getsf(Animation a);
 
+	Object getone(Animation a);
+
+	int animationupdate(Animation a);
+
+
 
 
 }

@@ -8,29 +8,37 @@
 </head>
 <body>
 
-	<form action="update.go" method="post" enctype="multipart/form-data">
-		<table border="1">
+	<form action="animationupdate.go" method="post" enctype="multipart/form-data">
+		<table border="1" id="animationTbl">
 			<tr>
 				<td>제목</td>
-				<td><input name="a_title"></td>
+				<td><input value="${one.a_title }" name="a_title"></td>
 			</tr>
 			<tr>
 				<td>사진</td>
-				<td><input name="a_photo" type="file"></td>
+				<td><img src="resources/files/${one.a_photo }"></td>
+			</tr>
+			<tr>
+				<td>사진수정</td>
+				<td><input name="a_photo" type="file"><input name="oldphoto" type="hidden" value="${one.a_photo }" ></td>
 			</tr>
 			<tr>
 				<td>줄거리</td>
-				<td><textarea name="a_txt"></textarea></td>
+				<td><textarea name="a_txt">${one.a_txt }</textarea></td>
 			</tr>
 			<tr>
 				<td>장르</td>
-				<td><select name="a_genre">
+				<td>${one.a_genre }<select name="a_genre">
 						<option value="러브코미디">러브코미디</option>
 						<option value="판타지">판타지</option>
 						<option value="로맨스">로맨스</option>
 						<option value="액션">액션</option>
-						<option value="스릴러">스릴러</option>
-				</select></td>
+						<option value="SF">SF</option>
+				</select><input name="oldgenre" type="hidden" value="${one.a_genre }" >
+				<input name="a_no" type="hidden" value="${one.a_no }" ></td>
+			</tr>
+			<tr>
+				<td><button>수정하기</button></td>
 			</tr>
 		</table>
 	</form>

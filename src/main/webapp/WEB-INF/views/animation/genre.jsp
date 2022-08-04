@@ -37,7 +37,8 @@
 		</tr>
 		<tr>
 			<td>${l.a_genre }</td>
-			<td><button onclick="animationdeleteGO('${l.a_no}');">삭제</button><button>수정</button></td>
+			<td><button onclick="animationdeleteGO('${l.a_no}');">삭제</button>
+			<button onclick="location.href='animationupdatepage.go?a_no=${l.a_no }'">수정</button></td>
 		</tr>
 	</table>
  	</c:forEach>

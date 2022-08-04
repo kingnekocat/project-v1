@@ -59,9 +59,7 @@
 						<option value="판타지">판타지</option>
 						<option value="로맨스">로맨스</option>
 						<option value="액션">액션</option>
-						<option value="스릴러">스릴러</option>
-						<option value="학원물">학원물</option>
-						<option value="SF">소년물</option>
+						<option value="SF">SF</option>
 				</select>
 				<input name="oldfav" type="hidden" value="${sessionScope.loginMember.m_fav }">
 				</td>
