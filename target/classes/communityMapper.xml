@@ -10,5 +10,15 @@
 	select * from a_community where c_no = #{c_no}
 </select>
 
+<insert id="regcommunity" parameterType="com.shc.pt.community.Community">
+	insert into a_community values(a_community_seq.nextval,#{c_writer},#{c_title},#{c_txt},#{c_photo},sysdate)
+</insert>
+
+<delete id="deletecommunity" parameterType="com.shc.pt.community.Community">
+	delete from a_community where c_no = #{c_no}
+</delete>
+
+
+
 
 </mapper>

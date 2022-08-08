@@ -39,4 +39,35 @@ public class CommunityController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/CommunityRegPage.go", method = RequestMethod.GET)
+	public String CommunityRegPagego(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		req.setAttribute("contentPage", "community/communityregpage.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/communityReg.go", method = RequestMethod.POST)
+	public String communityReggo(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		cDAO.regCommunity(c, req);
+		cDAO.getcommunity(c, req);
+		req.setAttribute("contentPage", "community/community.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/communitydelete.go", method = RequestMethod.GET)
+	public String communitydeletego(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		cDAO.deleteCommunity(c, req);
+		cDAO.getcommunity(c, req);
+		req.setAttribute("contentPage", "community/community.jsp");
+		
+		return "index";
+	}
+	
 }

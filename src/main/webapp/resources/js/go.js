@@ -24,3 +24,26 @@ function reviewdeletego(n) {
 		location.href = "reviewdelete.go?r_no="+n;
 	}
 }
+
+function communitydeleteGo(n) {
+	var ok = confirm("삭제 하시겠습니까?");
+	if (ok) {
+		location.href = "communitydelete.go?c_no="+n;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

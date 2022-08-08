@@ -8,4 +8,8 @@ public interface CommunityMapper {
 
 	Object getonecommunity(Community c);
 
+	int regcommunity(Community c);
+
+	int deletecommunity(Community c);
+
 }
