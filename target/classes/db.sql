@@ -55,14 +55,21 @@ insert into a_review values(a_review_seq.nextval,'작성자3','사진','제목',
 ------------------------------------------------------------------------
 
 create table a_community(
-
+c_no number(5) primary key,
+c_writer varchar2(300 char) not null,
+c_title varchar2(300 char) not null, 
+c_txt varchar2(300 char) not null,
+c_photo varchar2(300 char) not null,
+c_date date not null
 );
 
+create sequence a_community_seq;
 
+select * from a_community;
 
-
-
-
+insert into a_community values(a_community_seq.nextval,'작성자','제목','내용','사진',sysdate);
+insert into a_community values(a_community_seq.nextval,'작성자','제목1','내용1','사진',sysdate);
+insert into a_community values(a_community_seq.nextval,'작성자','제목2','내용2','사진',sysdate);
 
 
 

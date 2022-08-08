@@ -23,7 +23,7 @@
 		<tr>
 			<td><a onclick="location.href='animationgenre.go'">Animation</a></td>
 			<td><a onclick="location.href='reviewpage.go'">Review</a></td>
-			<td><a onclick="">Community</a></td>
+			<td><a onclick="location.href='communitypage.go'">Community</a></td>
 			<td><a onclick="">Shop</a></td>
 		</tr>
 	</table>
