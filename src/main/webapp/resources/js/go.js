@@ -17,3 +17,10 @@ function animationdeleteGO(n) {
 		location.href = "animationdelete.go?a_no="+n;
 	}
 }
+
+function reviewdeletego(n) {
+	var ok = confirm("삭제 하시겠습니까?");
+	if (ok) {
+		location.href = "reviewdelete.go?r_no="+n;
+	}
+}

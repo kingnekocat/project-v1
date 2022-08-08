@@ -6,6 +6,25 @@
 	select * from a_review 
 </select>
 
+<insert id="reviewreg" parameterType="com.shc.pt.review.Review">
+	insert into a_review values(a_review_seq.nextval,#{r_writer},#{r_photo},#{r_title},#{r_txt},sysdate)
+</insert>
+
+<delete id="reviewdelete" parameterType="com.shc.pt.review.Review">
+	delete from a_review where r_no = #{r_no}
+</delete>
+
+<select id="getonereview" resultType="com.shc.pt.review.Review">
+	select * from a_review where r_no = #{r_no}
+</select>
+
+<update id="updatereview" parameterType="com.shc.pt.review.Review">
+		update a_review
+		set r_title=#{r_title},
+		r_txt=#{r_txt}, r_photo=#{r_photo}
+		where
+		r_no=#{r_no}
+</update>
 
 
 

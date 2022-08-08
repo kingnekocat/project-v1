@@ -76,7 +76,6 @@ public class AnimationController {
 		
 		mDAO.loginCheck(req);
 		aDAO.animationdelete(a, req);
-		aDAO.getloveco(a, req);
 		req.setAttribute("contentPage", "animation/genre.jsp");
 		return "index";
 	}

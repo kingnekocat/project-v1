@@ -37,4 +37,47 @@ public class ReviewController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/reviewreg.go", method = RequestMethod.POST)
+	public String reviewreggo(Review r ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		rDAO.reviewreg(r, req);
+		rDAO.getreview(r, req);
+		req.setAttribute("contentPage", "review/review.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/reviewdelete.go", method = RequestMethod.GET)
+	public String reviewdeletego(Review r ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		rDAO.reviewdelete(r, req);
+		rDAO.getreview(r, req);
+		req.setAttribute("contentPage", "review/review.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/reviewupdatepage.go", method = RequestMethod.GET)
+	public String reviewupdatepagego(Review r ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		rDAO.getonereview(r, req);
+		req.setAttribute("contentPage", "review/reviewupdate.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/reviewupdate.go", method = RequestMethod.POST)
+	public String reviewupdatego(Review r ,HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		rDAO.updatereview(r, req);
+		rDAO.getreview(r, req);
+		req.setAttribute("contentPage", "review/review.jsp");
+		
+		return "index";
+	}
+	
 }

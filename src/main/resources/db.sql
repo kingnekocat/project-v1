@@ -52,4 +52,28 @@ insert into a_review values(a_review_seq.nextval,'작성자','사진','제목','
 insert into a_review values(a_review_seq.nextval,'작성자2','사진','제목','내용',sysdate);
 insert into a_review values(a_review_seq.nextval,'작성자3','사진','제목','내용',sysdate);
 
+------------------------------------------------------------------------
+
+create table a_community(
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
