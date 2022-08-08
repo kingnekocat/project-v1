@@ -84,6 +84,43 @@ public class CommunityDAO {
 			e.printStackTrace();
 		}
 	}
+
+	public void communityUpdate(Community c, HttpServletRequest req) {
+		
+		String path = req.getSession().getServletContext().getRealPath("resources/files");
+		MultipartRequest mr = null;
+		try {
+		mr = new MultipartRequest(req, path, 10 * 1024 * 1024, "utf-8", new DefaultFileRenamePolicy());	
+			
+		String title = mr.getParameter("c_title");
+		String txt = mr.getParameter("c_txt");
+		String newphoto = mr.getFilesystemName("c_photo");
+		String oldphoto = mr.getParameter("oldphoto");
+		String no = mr.getParameter("c_no");
+		String photo = null;
+		
+		if(newphoto == null) {
+			photo = oldphoto;
+		}else {
+			photo = newphoto;
+		}
+		
+		c.setC_title(title);
+		c.setC_txt(txt);
+		c.setC_photo(photo);
+		
+		if(ss.getMapper(CommunityMapper.class).communityUpdate(c)==1) {
+			req.setAttribute("result", "업데이트 성공");
+		}else {
+			req.setAttribute("result", "업데이트 실패");
+		}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
 	
 }

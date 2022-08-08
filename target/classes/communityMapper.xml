@@ -18,6 +18,13 @@
 	delete from a_community where c_no = #{c_no}
 </delete>
 
+<update id="communityUpdate" parameterType="com.shc.pt.community.Community">
+		update a_community
+		set c_title=#{c_title},
+		c_txt=#{c_txt}, c_photo=#{c_photo}
+		where
+		c_no=#{c_no}
+</update>
 
 
 

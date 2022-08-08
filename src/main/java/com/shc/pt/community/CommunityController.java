@@ -70,4 +70,25 @@ public class CommunityController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/communityUpdatePage.go", method = RequestMethod.GET)
+	public String communityUpdatePagego(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		cDAO.getonecommunity(c, req);
+		req.setAttribute("contentPage", "community/communityupdate.jsp");
+		
+		return "index";
+	}
+	
+	@RequestMapping(value = "/communityUpdate.go", method = RequestMethod.POST)
+	public String communityUpdatego(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		cDAO.communityUpdate(c, req);
+		cDAO.getcommunity(c, req);
+		req.setAttribute("contentPage", "community/community.jsp");
+		
+		return "index";
+	}
+	
 }

@@ -12,4 +12,6 @@ public interface CommunityMapper {
 
 	int deletecommunity(Community c);
 
+	int communityUpdate(Community c);
+
 }

@@ -25,7 +25,7 @@
 			<td><fmt:formatDate value="${communitys.c_date }"/> </td>
 		</tr>
 		<tr>
-			<td colspan="2"><button onclick="">수정하기</button>
+			<td colspan="2"><button onclick="location.href='communityUpdatePage.go?c_no=${communitys.c_no }'">수정하기</button>
 			<button onclick="communitydeleteGo('${communitys.c_no }');">삭제하기</button></td>
 		</tr>
 	</table>
