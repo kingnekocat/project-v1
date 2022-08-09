@@ -170,4 +170,9 @@ public class MemberDAO {
 		
 	}
 
+	public int getmemberNum(Member m, HttpServletRequest req) {
+		
+	return ss.getMapper(MemberMapper.class).getmemberNum(m);
+	}
+
 }

@@ -5,7 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="resources/css/sitecss.css">
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+<script type="text/javascript" src="resources/js/site_jquery.js"></script>
+<script type="text/javascript" src="resources/js/go.js"></script>
+<link rel="stylesheet" href="resources/css/member.css">
 </head>
 <body>
 
@@ -17,15 +20,15 @@
 		</tr>
 	</table>
 
-	<form action="join.go" method="post" enctype="multipart/form-data">
+	<form action="join.go" method="post" enctype="multipart/form-data" name="joinForm">
 		<table border="1" id="joinPageTbl">
 			<tr>
 				<td>ID</td>
-				<td><input name="m_id"></td>
+				<td><input id="join_idinput" name="m_id" placeholder="ID를 입력하세요"></td>
 			</tr>
 			<tr>
 				<td>PW</td>
-				<td><input name="m_pw"></td>
+				<td><input name="m_pw" placeholder="PW를 입력하세요"></td>
 			</tr>
 			<tr>
 				<td>사진</td>
@@ -33,11 +36,11 @@
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input name="m_name"></td>
+				<td><input name="m_name" placeholder="이름을 입력하세요"></td>
 			</tr>
 			<tr>
 				<td>닉네임</td>
-				<td><input name="m_nickname"></td>
+				<td><input name="m_nickname" placeholder="닉네임을 입력하세요"></td>
 			</tr>
 			<tr>
 				<td>주소</td>
@@ -62,7 +65,7 @@
 				</select></td>
 			</tr>
 			<tr>
-				<td><button>회원가입</button></td>
+				<td colspan="2"><button>회원가입</button></td>
 			</tr>
 		</table>
 	</form>

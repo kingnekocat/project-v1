@@ -1,9 +1,4 @@
 
-#homePageTbl {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #menuTbl {
 	margin-left: auto;
 	margin-right: auto;
@@ -12,11 +7,6 @@
 
 #homePage {
 	margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#loginPageTbl {
 	margin-left: auto;
 	margin-right: auto;
 }

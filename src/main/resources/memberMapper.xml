@@ -24,4 +24,11 @@
 		where m_id = #{m_id}	
 </delete>
 
+<select id="getmemberNum" 	parameterType="com.shc.pt.member.Member" resultType="java.lang.Integer">
+		select count(*) from pjmember where m_id = #{m_id}
+</select>
+
+
+
+
 </mapper>

@@ -10,6 +10,8 @@ public interface MemberMapper {
 
 	int deletem(Member m);
 
+	int getmemberNum(Member m);
+
 
 
 }
