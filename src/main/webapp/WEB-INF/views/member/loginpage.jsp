@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="resources/js/check.js"></script>
+<script type="text/javascript" src="resources/js/validCheck.js"></script>
 <link rel="stylesheet" href="resources/css/member.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
 		</tr>
 	</table>
 
-	<form action="login.go" method="post">
+	<form action="login.go" method="post" name="loginForm" onsubmit="return loginCheck();">
 		<table id="loginPageTbl" border="1"
 			style="width: 300px; height: 150px; text-align: center;">
 			<tr>

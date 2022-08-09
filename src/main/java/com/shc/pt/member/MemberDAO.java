@@ -57,6 +57,7 @@ public class MemberDAO {
 
 			if (ss.getMapper(MemberMapper.class).join(m) == 1) {
 				req.setAttribute("result", "가입성공");
+				System.out.println("가입성공!");
 			} else {
 				req.setAttribute("result", "가입실패");
 			}

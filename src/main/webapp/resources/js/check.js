@@ -35,7 +35,52 @@ function joinCheck() {
 	}
 	return true;
 	
+}
+
+function loginCheck() {
+	var idInput = document.loginForm.m_id;
+	var pwInput = document.loginForm.m_pw;
 	
-	
+	if(isEmpty(idInput) || containsHS(idInput)){
+		alert("ID를 입력해주세요");
+		idInput.value = "";
+		idInput.focus();
+		return false;
+	}else if (isEmpty(pwInput)) {
+		alert("PW를 입력해주세요");
+		pwInput.value = "";
+		pwInput.focus();
+		return false;
+	}
+	return true;
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
