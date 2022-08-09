@@ -8,6 +8,8 @@
 <script type="text/javascript" src="resources/js/jquery.js"></script>
 <script type="text/javascript" src="resources/js/site_jquery.js"></script>
 <script type="text/javascript" src="resources/js/go.js"></script>
+<script type="text/javascript" src="resources/js/check.js"></script>
+<script type="text/javascript" src="resources/js/validCheck.js"></script>
 <link rel="stylesheet" href="resources/css/member.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
 		</tr>
 	</table>
 
-	<form action="join.go" method="post" enctype="multipart/form-data" name="joinForm">
+	<form action="join.go" method="post" enctype="multipart/form-data" name="joinForm" onsubmit="return joinCheck();">
 		<table border="1" id="joinPageTbl">
 			<tr>
 				<td>ID</td>
