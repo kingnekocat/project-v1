@@ -9,14 +9,15 @@
 </head>
 <body>
 
+<c:if test="${sessionScope.loginMember.m_id eq 'master'}">
 <table border="1" id="animationUpdateTbl">
 		<tr>
 			<td><a onclick="location.href='regpage.go'">등록하기</a></td>
 		</tr>
 	</table>
-	
+</c:if>
 	<table border="1"
-		style="width: 800px; height: 70px; text-align: center;">
+		style="width: 800px; height: 70px; text-align: center;" id="animationGenreTbl">
 		<tr>
 			<td><a onclick="location.href='loveco.go'">러브코미디</a></td>
 			<td><a onclick="location.href='fantasy.go'">판타지</a></td>

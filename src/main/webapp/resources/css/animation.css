@@ -1,0 +1,21 @@
+#animationUpdateTbl {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 550px;
+	height: 80px;
+	text-align: center;
+}
+
+#animationTbl{
+	margin-top:20px;
+}
+
+#animationTbl img{
+	width: 100px;
+	height: 50px;
+}
+
+#animationGenreTbl{
+	margin-top:70px;
+}

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<table border="1">
+<table border="1" id="reviewRegTbl">
 		<tr>
 			<td><a onclick="location.href='reviewregpage.go'" >리뷰 작성하기</a></td>
 		</tr>

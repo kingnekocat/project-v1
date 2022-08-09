@@ -9,6 +9,8 @@
 <script type="text/javascript" src="resources/js/site_jquery.js"></script>
 <script type="text/javascript" src="resources/js/go.js"></script>
 <link rel="stylesheet" href="resources/css/sitecss.css">
+<link rel="stylesheet" href="resources/css/animation.css">
+<link rel="stylesheet" href="resources/css/review.css">
 </head>
 <body>
 

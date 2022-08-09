@@ -1,4 +1,7 @@
-
+#homePageTbl{
+	margin-left: auto;
+	margin-right: auto;
+}
 #menuTbl {
 	margin-left: auto;
 	margin-right: auto;
@@ -14,22 +17,6 @@
 #joinPageTbl {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#animationUpdateTbl {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-}
-
-#animationTbl{
-	margin-top:30px;
-}
-
-#animationTbl img{
-	width: 100px;
-	height: 50px;
-	
 }
 
 #CommunityRegTbl{
