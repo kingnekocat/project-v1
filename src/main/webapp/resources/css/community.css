@@ -1,1 +1,13 @@
-@charset "UTF-8";
+#CommunityTbl{
+	width: 900px;
+	
+}
+
+#CommunityRegTbl{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#communityDetailTbl{
+	text-align: center;
+}

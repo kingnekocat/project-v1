@@ -11,11 +11,11 @@
 <body>
 
 <c:forEach var="c" items="${communitys }" >
-	<table border="1" style="width:500px;" id="CommunityTbl">
+	<table border="1" id="CommunityTbl">
 		<tr>
-			<td><a onclick="location.href='communitydetail.go?c_no=${c.c_no}'">${c.c_title }</a></td>
-			<td>${c.c_writer }</td>
-			<td><fmt:formatDate value="${c.c_date }"/> </td>
+			<td style="width: 500px;"><a onclick="location.href='communitydetail.go?c_no=${c.c_no}'">${c.c_title }</a></td>
+			<td style="width: 200px;">${c.c_writer }</td>
+			<td style="width: 200px;"><fmt:formatDate value="${c.c_date }"/> </td>
 		</tr>
 	</table>
 </c:forEach>

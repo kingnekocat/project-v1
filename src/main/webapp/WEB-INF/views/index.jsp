@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="resources/css/sitecss.css">
 <link rel="stylesheet" href="resources/css/animation.css">
 <link rel="stylesheet" href="resources/css/review.css">
+<link rel="stylesheet" href="resources/css/community.css">
 </head>
 <body>
 
