@@ -30,22 +30,33 @@
 	<c:forEach var="l" items="${loves }">
 	<table id="animationTbl" border="1">
 		<tr>
-			<td rowspan="2"><img src="resources/files/${l.a_photo }" ></td>
-			<td>${l.a_title }</td>
+			<td rowspan="2" style="width:200px; height: 200px;"><img src="resources/files/${l.a_photo }"></td>
+			<td style="height: 50px;">&ensp;${l.a_title }</td>
 		</tr>
 		<tr>
 			<td>${l.a_txt }</td>
 		</tr>
+		<c:choose>
+	<c:when test="${sessionScope.loginMember.m_id eq 'master'}">
 		<tr>
-			<td>${l.a_genre }</td>
+			<td>&ensp;장르 : ${l.a_genre }</td>
 			<td><button onclick="animationdeleteGO('${l.a_no}');">삭제</button>
 			<button onclick="location.href='animationupdatepage.go?a_no=${l.a_no }'">수정</button></td>
 		</tr>
+	
+	</c:when>
+	<c:otherwise>
+	<tr>
+	<td>&ensp;장르 : ${l.a_genre }</td>
+	<td></td>
+	</tr>
+	</c:otherwise>
+	</c:choose>
 	</table>
  	</c:forEach>
 
 
-
+	
 
 
 
