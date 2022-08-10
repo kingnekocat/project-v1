@@ -6,3 +6,26 @@
 	height: 70px;
 	text-align: center;
 }
+
+#reviewTbl{
+	margin-top:20px;
+	width: 500px;
+	height: 300px;
+}
+
+#reviewTbl img{
+	width: 170px;
+	height: 250px;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
