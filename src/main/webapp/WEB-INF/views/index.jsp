@@ -12,24 +12,26 @@
 <link rel="stylesheet" href="resources/css/animation.css">
 <link rel="stylesheet" href="resources/css/review.css">
 <link rel="stylesheet" href="resources/css/community.css">
+<link rel="stylesheet" href="resources/css/member.css">
 </head>
 <body>
 
-	<table id="homePageTbl" border="1"
+	<table id="homePageTbl"
 		style="width: 1700px; height:150px; text-align: center;">
 		<tr>
 			<td width="350px;"></td>
-			<td width="1000px;"><a onclick="location.href='home.go'" style="font-size: 45px;">홈페이지</a></td>
+			<td width="1000px;"><a onclick="location.href='home.go'" style="font-size: 45px;"><img 
+			 src="resources/img/logo3.png"></a></td>
 			<td style="text-align: center;" ><jsp:include page="${loginPage }"></jsp:include></td>
 		</tr>
 	</table>
 
-	<table border="1" id="menuTbl" style="width: 1000px; height: 80px; text-align: center;">
+	<table id="menuTbl" style="width: 1000px; height: 80px; text-align: center;">
 		<tr>
-			<td><a onclick="location.href='animationgenre.go'">Animation</a></td>
-			<td><a onclick="location.href='reviewpage.go'">Review</a></td>
-			<td><a onclick="location.href='communitypage.go'">Community</a></td>
-			<td><a onclick="location.href='shop.go'">Shop</a></td>
+			<td id="indexmenu1"><a onclick="location.href='animationgenre.go'">Animation</a></td>
+			<td id="indexmenu2"><a onclick="location.href='reviewpage.go'">Review</a></td>
+			<td id="indexmenu3"><a onclick="location.href='communitypage.go'">Community</a></td>
+			<td id="indexmenu4"><a onclick="location.href='shop.go'">Shop</a></td>
 		</tr>
 	</table>
 

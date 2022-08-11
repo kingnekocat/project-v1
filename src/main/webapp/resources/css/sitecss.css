@@ -24,9 +24,44 @@
 	text-align: center;
 }
 
+body{
+	background-color:#202635;
+}
 
+#menuTbl{
+	background-color:#181d27; 
+	
+}
+#menuTbl a{
+	font-size: 22px;
+	font-weight: 1000;
+	color: white;
+}
+#indexmenu1{
+	border:5px solid orange;
+	border-left: 2px;
+	border-bottom: 2px;
+	border-top: 2px;
+	width: 250px;
+}
 
-
+#indexmenu2{
+	border:5px solid orange;
+	border-left: 2px;
+	border-bottom: 2px;
+	border-top: 2px;
+	width: 250px;
+}
+#indexmenu3{
+	border:5px solid orange;
+	border-left: 2px;
+	border-bottom: 2px;
+	border-top: 2px;
+	width: 250px;
+}
+#indexmenu4{
+	width: 250px;
+}
 
 
 

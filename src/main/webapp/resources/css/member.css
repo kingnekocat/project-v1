@@ -15,3 +15,15 @@
 	margin-right: auto;
 	text-align: center;
 }
+
+#login1{
+	text-align: center;
+	margin-top: -50px;
+	margin-left: 50px;
+}
+
+.loginTbl1{
+	font-size: 20px;
+	font-weight: 1000;
+	color: white;
+}
