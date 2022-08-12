@@ -8,16 +8,29 @@
 <script type="text/javascript" src="resources/js/check.js"></script>
 <script type="text/javascript" src="resources/js/validCheck.js"></script>
 <link rel="stylesheet" href="resources/css/member.css">
+<link rel="stylesheet" href="resources/css/sitecss.css">
 </head>
 <body>
 
-	<table id="homePageTbl" border="1"
-		style="width: 1700px; height: 150px; text-align: center;">
+	<table id="homefirstTbl">
 		<tr>
-			<td width="1000px;"><a onclick="location.href='home.go'"
-				style="font-size: 45px;">홈페이지</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 	</table>
+
+
+	<table id="homePageTbl"
+		style="width: 1700px; height: 150px; text-align: center;">
+		<tr>
+			<td width="350px;"></td>
+			<td width="1000px;"><a onclick="location.href='home.go'"
+				style="font-size: 45px;"><img src="resources/img/logo3.png"></a></td>
+			<td style="text-align: center;"></td>
+		</tr>
+	</table>
+	
 
 	<form action="login.go" method="post" name="loginForm" onsubmit="return loginCheck();">
 		<table id="loginPageTbl" border="1"

@@ -86,6 +86,40 @@ body{
 #homeTbl2 {
 	margin-top: 30px;
 }
+#secondhomeTbl {
+	margin-top: 30px;
+	background-color: #ec9d46;
+	color:white;
+}
+
+#homeTbl3 {
+	margin-top: 30px;
+}
+
+.homeTbl3Design{
+	box-shadow: 10px 10px 5px #cccccc;
+}
+
+.homeanime{
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

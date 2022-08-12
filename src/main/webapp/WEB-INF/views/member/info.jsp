@@ -6,18 +6,32 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="resources/js/go.js"></script>
+<link rel="stylesheet" href="resources/css/member.css">
+<link rel="stylesheet" href="resources/css/sitecss.css">
 </head>
 <body>
 
-	<table id="homePageTbl" border="1"
-		style="width: 1700px; height:150px; text-align: center;">
+	<table id="homefirstTbl">
 		<tr>
-			<td width="1000px;"><a onclick="location.href='home.go'" style="font-size: 45px;">홈페이지</a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+
+	<table id="homePageTbl"
+		style="width: 1700px; height: 150px; text-align: center;">
+		<tr>
+			<td width="350px;"></td>
+			<td width="1000px;"><a onclick="location.href='home.go'"
+				style="font-size: 45px;"><img src="resources/img/logo3.png"></a></td>
+			<td style="text-align: center;"></td>
 		</tr>
 	</table>
 	
 	<form action="update.go?m_id=${sessionScope.loginMember.m_id }" method="post" enctype="multipart/form-data">
-		<table border="1">
+		<table border="1" id="loginInfoTbl">
 			<tr>
 				<td>ID</td>
 				<td>${sessionScope.loginMember.m_id }</td>
