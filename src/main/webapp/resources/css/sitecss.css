@@ -104,12 +104,25 @@ body{
 	font-weight: 700;
 }
 
+#homeTbl5{
+	text-align: left;
+	margin-top: 30px;
+	box-shadow: 10px 10px 5px #cccccc;
+}
 
+#homeTbl6{
+	margin-top: 30px;
+}
 
+#homeTbl7{
+	margin-top: 30px;
+}
 
-
-
-
+#homeTbl8{
+	margin-top: 30px;
+	background-color: #243a53;
+	color: white;
+}
 
 
 
