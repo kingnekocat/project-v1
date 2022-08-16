@@ -42,3 +42,50 @@
 #animationGenreTbl{
 	margin-top:70px;
 }
+
+#animationRegTbl{
+	width: 450px;
+	height: 350px;
+	text-align: center;
+	border: 2px solid black;
+}
+#animationRegTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+}
+#regtxt{
+	width: 90%;
+	height: 100%;
+}
+
+#regtitle{
+	width: 350px;
+	height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

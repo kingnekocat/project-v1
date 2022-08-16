@@ -9,10 +9,10 @@
 <body>
 
 <form action="reg.go" method="post" enctype="multipart/form-data">
-		<table border="1">
+		<table id="animationRegTbl">
 			<tr>
 				<td>제목</td>
-				<td><input name="a_title"></td>
+				<td><input id="regtitle" name="a_title"></td>
 			</tr>
 			<tr>
 				<td>사진</td>
@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<td>줄거리</td>
-				<td><textarea name="a_txt"></textarea></td>
+				<td><textarea id="regtxt" name="a_txt"></textarea></td>
 			</tr>
 			<tr>
 				<td>장르</td>
@@ -37,6 +37,12 @@
 			</tr>
 		</table>
 	</form>
+
+<table style="height: 100px;">
+<tr>
+<td></td>
+</tr>
+</table>
 
 </body>
 </html>
