@@ -8,9 +8,10 @@
 }
 
 #animationTbl{
-	margin-top:35px;
+	margin-top:0px;
 	width: 800px;
 	height: 300px;
+	box-shadow: 10px 10px 5px #cccccc;
 }
 
 #animationTbl img{
@@ -20,6 +21,22 @@
 	margin-left: 15px;
 	margin-right: 5px;
 	margin-bottom: 5px;
+}
+
+#animationTbl button{
+	width: 100px;
+	height: 35px;
+	background-color: white;
+	border: 1px solid black;
+	font-weight: 900;
+	font-size: 12pt;
+}
+
+#animationTbl2{
+	margin-top:20px;
+	width: 800px;
+	height: 30px;
+	background-color: #ff5757;
 }
 
 #animationGenreTbl{

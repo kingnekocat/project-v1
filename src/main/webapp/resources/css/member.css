@@ -8,7 +8,7 @@
 	margin-top: 55px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ffb76f;
+	background-color: #f39267;
 }
 
 #loginPageTbl {
@@ -31,7 +31,7 @@
 	text-align: center;
 	width: 350px;
 	height: 350px;
-	border: 1px solid black;
+	box-shadow: 10px 10px 5px #cccccc;
 }
 
 #joinPageTbl button{
