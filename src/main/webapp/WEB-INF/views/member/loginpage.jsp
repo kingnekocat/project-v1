@@ -22,24 +22,23 @@
 
 
 	<table id="homePageTbl"
-		style="width: 1700px; height: 150px; text-align: center;">
+		style="width: 1870px; height: 150px; text-align: center;">
 		<tr>
-			<td width="350px;"></td>
 			<td width="1000px;"><a onclick="location.href='home.go'"
 				style="font-size: 45px;"><img src="resources/img/logo3.png"></a></td>
-			<td style="text-align: center;"></td>
 		</tr>
 	</table>
 	
+	<table id="loginPageTbl2" style="width: 350px; height: 30px;" ><tr><td></td></tr></table>
 
 	<form action="login.go" method="post" name="loginForm" onsubmit="return loginCheck();">
-		<table id="loginPageTbl" border="1"
-			style="width: 300px; height: 150px; text-align: center;">
+		<table id="loginPageTbl"
+			style="width: 350px; height: 200px; text-align: center;">
 			<tr>
-				<td>ID <input name="m_id"></td>
+				<td>ID <input name="m_id" id="loginInput1" placeholder="아이디를 입력하세요"></td>
 			</tr>
 			<tr>
-				<td>PW <input name="m_pw"></td>
+				<td>PW <input name="m_pw" id="loginInput2" placeholder="비밀번호를 입력하세요"></td>
 			</tr>
 			<tr>
 				<td><button>로그인</button>

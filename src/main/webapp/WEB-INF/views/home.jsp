@@ -119,9 +119,14 @@
 	</table>
 	
 	<table id="homeTbl8"
-		style="width: 1870px; height: 250px;">
+		style="width: 1870px; height: 200px;">
 		<tr>
-			<td>OSUSUME 회사소개 정책 및 약관 광고/제휴안내</td>
+			<td style="width: 200px;"><a style="font-size: 24pt; font-weight: 900;">&emsp;OSUSUME!</a></td>
+			<td>&emsp;&emsp;&emsp;회사소개&emsp; 정책 및 약관&emsp; 광고/제휴안내</td>
+		</tr>
+		<tr>
+			<td style="height: 170px;"></td>
+			<td></td>
 		</tr>
 	</table>
 

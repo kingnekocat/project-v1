@@ -25,20 +25,26 @@
 
 
 	<table id="homePageTbl"
-		style="width: 1700px; height: 150px; text-align: center;">
+		style="width: 1870px; height: 150px; text-align: center;">
 		<tr>
-			<td width="350px;"></td>
 			<td width="1000px;"><a onclick="location.href='home.go'"
 				style="font-size: 45px;"><img src="resources/img/logo3.png"></a></td>
-			<td style="text-align: center;"></td>
 		</tr>
 	</table>
 
-	<form action="join.go" method="post" enctype="multipart/form-data" name="joinForm" onsubmit="return joinCheck();">
-		<table border="1" id="joinPageTbl">
+	<table id="loginPageTbl2" style="width: 350px; height: 30px;">
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+
+	<form action="join.go" method="post" enctype="multipart/form-data"
+		name="joinForm" onsubmit="return joinCheck();">
+		<table id="joinPageTbl">
 			<tr>
 				<td>ID</td>
-				<td><input id="join_idinput" name="m_id" placeholder="ID를 입력하세요"></td>
+				<td><input id="join_idinput" name="m_id"
+					placeholder="ID를 입력하세요"></td>
 			</tr>
 			<tr>
 				<td>PW</td>
