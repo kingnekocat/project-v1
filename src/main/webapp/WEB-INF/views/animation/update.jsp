@@ -7,28 +7,34 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
+	<table id="animationUpTbl2">
+	<tr>
+	<td></td>
+	</tr>
+	</table>
 
 	<form action="animationupdate.go" method="post" enctype="multipart/form-data">
-		<table border="1" id="animationTbl">
+		<table id="animationUpTbl">
 			<tr>
-				<td>제목</td>
-				<td><input value="${one.a_title }" name="a_title"></td>
+				<td><a style="font-weight: 900; font-size: 14pt;">제목</a></td>
+				<td><input id="upinput1" value="${one.a_title }" name="a_title"></td>
 			</tr>
 			<tr>
-				<td>사진</td>
+				<td><a style="font-weight: 900; font-size: 14pt;">사진</a></td>
 				<td><img src="resources/files/${one.a_photo }"></td>
 			</tr>
 			<tr>
-				<td>사진수정</td>
+				<td><a style="font-weight: 900; font-size: 14pt;">사진수정</a></td>
 				<td><input name="a_photo" type="file"><input name="oldphoto" type="hidden" value="${one.a_photo }" ></td>
 			</tr>
 			<tr>
-				<td>줄거리</td>
+				<td><a style="font-weight: 900; font-size: 14pt;">줄거리</a></td>
 				<td><textarea name="a_txt">${one.a_txt }</textarea></td>
 			</tr>
 			<tr>
-				<td>장르</td>
-				<td>${one.a_genre }<select name="a_genre">
+				<td><a style="font-weight: 900; font-size: 14pt;">장르</a></td>
+				<td>${one.a_genre }&ensp;<select name="a_genre">
 						<option value="러브코미디">러브코미디</option>
 						<option value="판타지">판타지</option>
 						<option value="로맨스">로맨스</option>
@@ -38,10 +44,18 @@
 				<input name="a_no" type="hidden" value="${one.a_no }" ></td>
 			</tr>
 			<tr>
-				<td><button>수정하기</button></td>
+				<td></td>
+				<td><br><button>수정하기</button></td>
 			</tr>
 		</table>
 	</form>
+	
+	<table style="height: 100px;">
+	<tr>
+	<td></td>
+	</tr>
+	</table>
+	
 	
 </body>
 </html>

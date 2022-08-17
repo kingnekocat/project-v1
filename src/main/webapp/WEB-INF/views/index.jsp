@@ -27,7 +27,7 @@
 	<table id="homePageTbl"
 		style="width: 1870px; height: 150px; text-align: center;">
 		<tr>
-			<td width="500px;"></td>
+			<td width="435px;"></td>
 			<td width="1000px;"><a onclick="location.href='home.go'"
 				style="font-size: 45px;"><img src="resources/img/logo3.png"></a></td>
 			<td style="text-align: center;"><jsp:include page="${loginPage }"></jsp:include></td>

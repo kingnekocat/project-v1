@@ -10,20 +10,25 @@
 <body>
 
 <c:if test="${sessionScope.loginMember.m_id eq 'master'}">
-<table border="1" id="animationUpdateTbl">
+<table id="animationUpdateTbl">
 		<tr>
 			<td><a onclick="location.href='regpage.go'">등록하기</a></td>
 		</tr>
 	</table>
 </c:if>
-	<table border="1"
-		style="width: 800px; height: 70px; text-align: center;" id="animationGenreTbl">
+
+	<table 
+		style="width: 890px; height: 70px; text-align: center;" id="animationGenreTbl">
 		<tr>
-			<td><a onclick="location.href='loveco.go'">러브코미디</a></td>
-			<td><a onclick="location.href='fantasy.go'">판타지</a></td>
-			<td><a onclick="location.href='romance.go'">로맨스</a></td>
-			<td><a onclick="location.href='action.go'">액션</a></td>
-			<td><a onclick="location.href='sf.go'">SF</a></td>
+			<td id="genreTbl1" style="width: 170px;"><a onclick="location.href='loveco.go'">러브코미디</a></td>
+			<td style="width: 10px;"></td>
+			<td id="genreTbl2" style="width: 170px;"><a onclick="location.href='fantasy.go'">판타지</a></td>
+			<td style="width: 10px;"></td>
+			<td id="genreTbl3" style="width: 170px;"><a onclick="location.href='romance.go'">로맨스</a></td>
+			<td style="width: 10px;"></td>
+			<td id="genreTbl4" style="width: 170px;"><a onclick="location.href='action.go'">액션</a></td>
+			<td style="width: 10px;"></td>
+			<td id="genreTbl5" style="width: 170px;"><a onclick="location.href='sf.go'">SF</a></td>
 		</tr>
 	</table>
 
@@ -53,7 +58,7 @@
 	</c:when>
 	<c:otherwise>
 	<tr>
-	<td>&ensp;장르 : ${l.a_genre }</td>
+	<td>&ensp;&ensp;<a style="font-weight: 900; font-size: 12pt;">장르</a> : ${l.a_genre }</td>
 	<td></td>
 	</tr>
 	</c:otherwise>
