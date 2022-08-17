@@ -10,17 +10,24 @@
 </head>
 <body>
 
-	<table border="1" id="reviewRegTbl">
+	<table id="reviewRegTbl">
 		<tr>
 			<td><a onclick="location.href='reviewregpage.go'">리뷰 작성하기</a></td>
 		</tr>
 
 	</table>
 
+	<table id="reviewTbl2">
+		<tr>
+			<td></td>
+		</tr>
+
+	</table>
+
 	<c:forEach var="r" items="${reviews }">
-		<table border="1" id="reviewTbl">
+		<table id="reviewTbl">
 			<tr>
-				<td colspan="2">${r.r_title }</td>
+				<td style="height: 30px;" colspan="2">&ensp;&ensp;${r.r_title }</td>
 			</tr>
 			<tr>
 				<td style="width: 200px;"><img
@@ -28,7 +35,7 @@
 				<td><pre>${r.r_txt }</pre></td>
 			</tr>
 			<tr>
-				<td>작성자:${r.r_writer }</td>
+				<td>&ensp;&ensp;작성자:&ensp;${r.r_writer }</td>
 				<td><fmt:formatDate type="both" timeStyle="short"
 						dateStyle="short" value="${r.r_date }" /></td>
 			</tr>
