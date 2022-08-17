@@ -28,6 +28,65 @@
 	margin-bottom: 5px;
 }
 
+#reviewTbl button{
+	width: 120px;
+	height: 30px;
+	background-color: white;
+	font-size: 12pt;
+	font-weight: 900;
+	border: 1px solid black;
+}
+
+#reviewUpdateTbl{
+	text-align: center;
+	width: 500px;
+	height: 300px;
+	box-shadow: 5px 5px 5px gray;
+}
+
+#reviewUpdateTbl2{
+	width: 685px;
+	height: 35px;
+	background-color: #0e2241;
+}
+
+#reviewUpdateTbl textarea{
+	width: 435px;
+	height: 330px;
+}
+
+#reviewUpdateTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	font-size: 12pt;
+	font-weight: 900;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+#updateReviewInput1{
+	width: 670px;
+	height: 20px;
+}
+
+#RegReviewtbl{
+	width: 600px;
+	height: 450px;
+	text-align: center;
+}
+
+#RegReviewtbl textarea{
+	width:95%;
+	height: 350px;
+}
+
+#RegReviewInput1{
+	width: 520px;
+	height: 25px;
+}
+
+
 
 
 

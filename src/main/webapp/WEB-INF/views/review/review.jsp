@@ -27,7 +27,7 @@
 	<c:forEach var="r" items="${reviews }">
 		<table id="reviewTbl">
 			<tr>
-				<td style="height: 30px;" colspan="2">&ensp;&ensp;${r.r_title }</td>
+				<td style="height: 30px;" colspan="2">&ensp;&ensp;<a style="font-weight: 900; font-size: 12pt;">${r.r_title }</a></td>
 			</tr>
 			<tr>
 				<td style="width: 200px;"><img
@@ -35,7 +35,7 @@
 				<td><pre>${r.r_txt }</pre></td>
 			</tr>
 			<tr>
-				<td>&ensp;&ensp;작성자:&ensp;${r.r_writer }</td>
+				<td>&ensp;&ensp;<a style="font-weight: 900; font-size: 12pt;">작성자</a>:&ensp;${r.r_writer }</td>
 				<td><fmt:formatDate type="both" timeStyle="short"
 						dateStyle="short" value="${r.r_date }" /></td>
 			</tr>

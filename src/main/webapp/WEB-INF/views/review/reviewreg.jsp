@@ -9,10 +9,10 @@
 <body>
 
 	<form action="reviewreg.go" method="post" enctype="multipart/form-data" >
-		<table border="1">
+		<table id="RegReviewtbl" border="1">
 			<tr>
 				<td>제목</td>
-				<td><input name="r_title"></td>
+				<td><input id="RegReviewInput1" name="r_title"></td>
 			</tr>
 			<tr>
 				<td>내용</td>
@@ -23,7 +23,7 @@
 				<td><input name="r_photo" type="file"></td>
 			</tr>
 			<tr>
-				<td><button>작성하기</button></td>
+				<td colspan="2"><button>작성하기</button></td>
 			</tr>
 		</table>
 	</form>
