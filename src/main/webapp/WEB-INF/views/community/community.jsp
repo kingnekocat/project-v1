@@ -10,22 +10,30 @@
 </head>
 <body>
 
+<table id="CommunityTbl2"><tr>
+<td style="width: 500px;">게시글</td>
+<td style="width: 200px;">작성자</td>
+<td style="width: 200px;">날짜</td>
+</tr></table>
+
 <c:forEach var="c" items="${communitys }" >
-	<table border="1" id="CommunityTbl">
+	<table id="CommunityTbl">
 		<tr>
 			<td style="width: 500px;"><a onclick="location.href='communitydetail.go?c_no=${c.c_no}'">${c.c_title }</a></td>
-			<td style="width: 200px;">${c.c_writer }</td>
-			<td style="width: 200px;"><fmt:formatDate type="both" timeStyle="short" dateStyle="short" value="${c.c_date }"/> </td>
+			<td style="width: 200px; text-align: center;">${c.c_writer }</td>
+			<td style="width: 200px; text-align: center;"><fmt:formatDate type="both" timeStyle="short" dateStyle="short" value="${c.c_date }"/> </td>
 		</tr>
 	</table>
 </c:forEach>
 
-<table border="1" style="width:500px;" id="CommunityRegTbl" >
+<table style="width:500px;" id="CommunityRegTbl" >
 		<tr>
-			<td><input>검색</td>
+			<td><input id="">&ensp;<a style="font-weight: 900;">검색</a></td>
 			<td><button onclick="location.href='CommunityRegPage.go'">글쓰기</button></td>
 		</tr>
 	</table>
+
+<table><tr><td></td></tr></table>
 
 </body>
 </html>

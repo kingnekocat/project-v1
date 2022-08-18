@@ -1,13 +1,100 @@
 #CommunityTbl{
 	width: 900px;
+	background-color: #f8f8f8;
 	
+}
+
+#CommunityTbl2{
+	width: 900px;
+	height: 35px;
+	background-color: #335273;
+	text-align: center;
+	color: white;
+	font-size: 12pt;
+	font-weight: 1000;
 }
 
 #CommunityRegTbl{
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #f8f8f8;
+}
+
+#CommunityRegTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	font-size: 12pt;
+	border: 1px solid black;
 }
 
 #communityDetailTbl{
 	text-align: center;
+	box-shadow: 10px 10px 5px #cccccc;
 }
+
+#communityDetailTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	border:1px solid black;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#communityDetailTbl2{
+	width: 550px;
+	height: 35px;
+	background-color: #28425e;
+}
+
+#communityUpTbl textarea{
+	width: 530px;
+	height: 200px;
+}
+
+#communityUpTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#communityUpTbl{
+	width: 550px;
+	height: 350px;
+	text-align: center;
+}
+
+#CommunityUpInput{
+	width: 530px;
+	height: 25px;
+}
+
+#CommunityRegPTbl{
+	width: 550px;
+	height: 350px;
+	text-align: center;
+}
+
+#CommunityRegPTbl input{
+	width: 500px;
+	height: 25px;
+}
+
+#CommunityRegPTbl textarea{
+	width: 500px;
+	height: 200px;
+}
+
+#CommunityRegPTbl button{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid black;
+	font-size: 12pt;
+}
+
+
+
+

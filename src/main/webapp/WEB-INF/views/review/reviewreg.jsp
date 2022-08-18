@@ -8,8 +8,10 @@
 </head>
 <body>
 
+	<table id="RegReviewtbl2"><tr><td></td></tr></table>
+
 	<form action="reviewreg.go" method="post" enctype="multipart/form-data" >
-		<table id="RegReviewtbl" border="1">
+		<table id="RegReviewtbl">
 			<tr>
 				<td>제목</td>
 				<td><input id="RegReviewInput1" name="r_title"></td>
@@ -27,6 +29,8 @@
 			</tr>
 		</table>
 	</form>
+	
+	<table style="height: 100px;"><tr><td></td></tr></table>
 	
 </body>
 </html>

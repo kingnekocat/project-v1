@@ -10,8 +10,9 @@
 </head>
 <body>
 
+	<table id="communityDetailTbl2"><tr><td></td></tr></table>
 
-	<table border="1" style="width: 450px; height: 300px;"
+	<table style="width: 550px; height: 350px;"
 		id="communityDetailTbl">
 		<tr>
 			<td colspan="2">${communitys.c_title }</td>
@@ -24,7 +25,7 @@
 			<td colspan="2">${communitys.c_txt }</td>
 		</tr>
 		<tr>
-			<td>${communitys.c_writer }</td>
+			<td>작성자:${communitys.c_writer }</td>
 			<td><fmt:formatDate type="both" timeStyle="short" dateStyle="short" value="${communitys.c_date }" /></td>
 		</tr>
 		<c:choose>
@@ -50,27 +51,7 @@
 	</table>
 
 
-	<c:choose>
-		<c:when
-			test="${communitys.c_writer == sessionScope.loginMember.m_id }">
-			<tr>
-				<td colspan="2"><button
-						onclick="location.href='communityUpdatePage.go?c_no=${communitys.c_no }'">수정하기</button>
-					<button onclick="communitydeleteGo('${communitys.c_no }');">삭제하기</button></td>
-			</tr>
-		</c:when>
-		<c:when test="${sessionScope.loginMember.m_id eq 'master' }">
-			<tr>
-				<td colspan="2"><button
-						onclick="location.href='communityUpdatePage.go?c_no=${communitys.c_no }'">수정하기</button>
-					<button onclick="communitydeleteGo('${communitys.c_no }');">삭제하기</button></td>
-			</tr>
-		</c:when>
-		<c:otherwise>
-
-		</c:otherwise>
-	</c:choose>
-
+<table style="height: 100px;"><tr><td></td></tr></table>
 
 
 

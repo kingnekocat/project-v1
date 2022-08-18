@@ -74,6 +74,13 @@
 	width: 600px;
 	height: 450px;
 	text-align: center;
+	box-shadow: 5px 5px 5px gray;
+}
+
+#RegReviewtbl2{
+	width: 600px;
+	height: 35px;
+	background-color: #243a53;
 }
 
 #RegReviewtbl textarea{
@@ -82,7 +89,7 @@
 }
 
 #RegReviewInput1{
-	width: 520px;
+	width: 530px;
 	height: 25px;
 }
 
