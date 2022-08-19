@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="resources/css/review.css">
 <link rel="stylesheet" href="resources/css/community.css">
 <link rel="stylesheet" href="resources/css/member.css">
+<link rel="stylesheet" href="resources/css/shop.css">
 </head>
 <body>
 	<table id="homefirstTbl">

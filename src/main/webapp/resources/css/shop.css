@@ -1,0 +1,45 @@
+#shopTbl1{
+	width: 1800px;
+	height: 350px;
+	text-align: center;
+}
+
+.shopimgTbl{
+border: 2px solid #f3f3f3;
+}
+
+#shopTbl1 img{
+ 	width: 800px;	
+ 	height: 350px;
+}
+
+#shopTbl2{
+	margin-top: 35px;
+	width: 1800px;
+	height: 350px;
+	text-align: center;
+}
+
+#shopTbl2 img{
+ 	width: 800px;	
+ 	height: 350px;
+}
+
+#shopTbl3{
+	margin-top: 35px;
+	width: 1800px;
+	height: 350px;
+	text-align: center;
+	border: 2px solid #f3f3f3;
+}
+
+
+
+
+
+
+
+
+
+
+
