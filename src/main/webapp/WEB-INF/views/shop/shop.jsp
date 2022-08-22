@@ -48,11 +48,11 @@
 	
 	<table id="shopTbl4">
 		<tr>
-			<td class="shopimgTbl" style="width: 700px;"><a href="https://www.figurefarm.net/"><img src=""></a><br>
-			<a style="font-weight: 1000; font-size: 17pt;">피규어팜</a>&ensp;&ensp;<a style="font-weight: 1000; font-size: 12pt;">구매하러 가기!</a></td>
+			<td class="shopimgTbl" style="width: 700px;"><a href="https://www.figurefarm.net/"><img src="resources/img/shop8.png"></a><br>
+			<a style="font-weight: 1000; font-size: 17pt;">도키도키굿즈</a>&ensp;&ensp;<a style="font-weight: 1000; font-size: 12pt;">구매하러 가기!</a></td>
 			<td></td>
-			<td class="shopimgTbl" style="width: 700px;"><a href="https://comics-art.co.kr/"><img src=""></a><br>
-			<a style="font-weight: 1000; font-size: 17pt;">코믹스아트</a>&ensp;&ensp;<a style="font-weight: 1000; font-size: 12pt;">구매하러 가기!</a></td>
+			<td class="shopimgTbl" style="width: 700px;"><a href="https://comics-art.co.kr/"><img src="resources/img/shop9.png"></a><br>
+			<a style="font-weight: 1000; font-size: 17pt;">피규어월드</a>&ensp;&ensp;<a style="font-weight: 1000; font-size: 12pt;">구매하러 가기!</a></td>
 		</tr>
 	</table>
 

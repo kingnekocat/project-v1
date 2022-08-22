@@ -103,21 +103,21 @@
 		</tr>
 	</table>
 
-	<table id="homeTbl7Suv" border="1"
-		style="width: 1870px; height: 100px; text-align: center;">
+	<table id="homeTbl7Suv"
+		style="width: 1870px; height: 50px; text-align: center;">
 		<tr>
-			<td colspan="2"><a>다양한 애니메이션 굿즈를 만나보세요!</a></td>
+			<td colspan="2"><a style="font-size: 20pt; font-weight: 900; color: white;">다양한 애니메이션 굿즈를 만나보세요!</a></td>
 		</tr>
 	</table>
 
-	<table id="homeTbl7" border="1"
+	<table id="homeTbl7"
 		style="width: 1870px; height: 300px; text-align: center;">
 		<tr>
-			<td><a><img src=""></a></td>
-			<td>2</td>
-			<td><a><img src=""></a></td>
-			<td>2</td>
-			<td><a><img src=""></a></td>
+			<td class="home7shop"><a href="https://figurepresso.com/"><img src="resources/img/homeshop1.png"></a></td>
+			<td style="width: 50px;"></td>
+			<td class="home7shop"><a href="https://figurepresso.com/"><img src="resources/img/homeshop2.png"></a></td>
+			<td style="width: 50px;"></td>
+			<td class="home7shop"><a href="https://figurepresso.com/"><img src="resources/img/homeshop3.png"></a></td>
 		</tr>
 	</table>
 	
