@@ -103,18 +103,21 @@
 		</tr>
 	</table>
 
+	<table id="homeTbl7Suv" border="1"
+		style="width: 1870px; height: 100px; text-align: center;">
+		<tr>
+			<td colspan="2"><a>다양한 애니메이션 굿즈를 만나보세요!</a></td>
+		</tr>
+	</table>
+
 	<table id="homeTbl7" border="1"
 		style="width: 1870px; height: 300px; text-align: center;">
 		<tr>
-			<td colspan="2">홈2</td>
-		</tr>
-		<tr>
-			<td>홈2</td>
-			<td>홈2</td>
-		</tr>
-		<tr>
-			<td>홈2</td>
-			<td>홈2</td>
+			<td><a><img src=""></a></td>
+			<td>2</td>
+			<td><a><img src=""></a></td>
+			<td>2</td>
+			<td><a><img src=""></a></td>
 		</tr>
 	</table>
 	
