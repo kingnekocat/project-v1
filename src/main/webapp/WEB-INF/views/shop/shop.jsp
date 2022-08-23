@@ -55,6 +55,13 @@
 			<a style="font-weight: 1000; font-size: 17pt;">피규어월드</a>&ensp;&ensp;<a style="font-weight: 1000; font-size: 12pt;">구매하러 가기!</a></td>
 		</tr>
 	</table>
+	
+	<table style="height: 50px;">
+		<tr>
+			<td>
+			</td>
+		</tr>
+	</table>
 
 </body>
 </html>

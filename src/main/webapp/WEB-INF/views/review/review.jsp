@@ -10,12 +10,13 @@
 </head>
 <body>
 
+	<c:if test="${sessionScope.loginMember != null}">
 	<table id="reviewRegTbl">
 		<tr>
 			<td><a onclick="location.href='reviewregpage.go'">리뷰 작성하기</a></td>
 		</tr>
-
 	</table>
+	</c:if>
 
 	<table id="reviewTbl2">
 		<tr>
