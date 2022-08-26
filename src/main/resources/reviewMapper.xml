@@ -3,7 +3,7 @@
 <mapper namespace="com.shc.pt.review.ReviewMapper">
 
 <select id="getreview" resultType="com.shc.pt.review.Review">
-	select * from a_review 
+	select * from a_review order by r_date desc
 </select>
 
 <insert id="reviewreg" parameterType="com.shc.pt.review.Review">

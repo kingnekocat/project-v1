@@ -122,13 +122,13 @@
 	</table>
 	
 	<table id="homeTbl8"
-		style="width: 1870px; height: 200px;">
+		style="width: 1870px; height: 100px;">
 		<tr>
 			<td style="width: 200px;"><a style="font-size: 24pt; font-weight: 900;">&emsp;OSUSUME!</a></td>
 			<td>&emsp;&emsp;&emsp;회사소개&emsp; 정책 및 약관&emsp; 광고/제휴안내</td>
 		</tr>
 		<tr>
-			<td style="height: 170px;"></td>
+			<td style="height: 30px;"></td>
 			<td></td>
 		</tr>
 	</table>

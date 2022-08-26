@@ -28,7 +28,7 @@
 
 <table style="width:500px;" id="CommunityRegTbl" >
 		<tr>
-			<td><input id="">&ensp;<a style="font-weight: 900;">검색</a></td>
+			<td><input id="">&ensp;<a style="font-weight: 900;"><button>검색</button></a></td>
 			<td><button onclick="location.href='CommunityRegPage.go'">글쓰기</button></td>
 		</tr>
 	</table>

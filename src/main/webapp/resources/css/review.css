@@ -14,7 +14,7 @@
 
 #reviewTbl{
 	margin-top:35px;
-	width: 500px;
+	width: 700px;
 	height: 300px;
 	box-shadow: 5px 5px 5px 5px gray;
 }
@@ -93,6 +93,11 @@
 	height: 25px;
 }
 
+pre{
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
 
 
 
