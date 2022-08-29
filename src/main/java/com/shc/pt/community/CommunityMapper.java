@@ -14,4 +14,6 @@ public interface CommunityMapper {
 
 	int communityUpdate(Community c);
 
+	List<Community> communitysearch(Community c);
+
 }

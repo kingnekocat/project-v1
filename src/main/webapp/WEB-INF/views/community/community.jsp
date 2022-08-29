@@ -26,12 +26,14 @@
 	</table>
 </c:forEach>
 
+<form action="CommunitySearch.go">
 <table style="width:500px;" id="CommunityRegTbl" >
 		<tr>
-			<td><input id="">&ensp;<a style="font-weight: 900;"><button>검색</button></a></td>
-			<td><button onclick="location.href='CommunityRegPage.go'">글쓰기</button></td>
+			<td><input name="c_title" id="">&ensp;<a style="font-weight: 900;"><button>검색</button></a></td>
+			<td><button type="button" onclick="location.href='CommunityRegPage.go'">글쓰기</button></td>
 		</tr>
 	</table>
+</form>
 
 <table><tr><td></td></tr></table>
 

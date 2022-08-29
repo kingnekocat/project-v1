@@ -3,7 +3,7 @@
 <mapper namespace="com.shc.pt.community.CommunityMapper">
 
 <select id="getcommunity" resultType="com.shc.pt.community.Community">
-			select * from a_community 
+			select * from a_community order by c_date desc
 </select>
 
 <select id="getonecommunity" resultType="com.shc.pt.community.Community">
@@ -26,6 +26,11 @@
 		c_no=#{c_no}
 </update>
 
+<select id="communitysearch" resultType="com.shc.pt.community.Community">
+
+select * from a_community where c_title like '%'||#{c_title}||'%' order by c_date desc
+
+</select>
 
 
 </mapper>

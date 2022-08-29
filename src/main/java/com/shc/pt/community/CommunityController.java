@@ -91,4 +91,14 @@ public class CommunityController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/CommunitySearch.go", method = RequestMethod.GET)
+	public String communitySearchgo(Community c, HttpServletRequest req) {
+		
+		mDAO.loginCheck(req);
+		cDAO.communitySearch(c, req);
+		req.setAttribute("contentPage", "community/community.jsp");
+		
+		return "index";
+	}
+	
 }

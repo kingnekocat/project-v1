@@ -121,6 +121,18 @@ public class CommunityDAO {
 		}
 		
 	}
+
+	public void communitySearch(Community c, HttpServletRequest req) {
+		
+		try {
+			req.setAttribute("communitys", ss.getMapper(CommunityMapper.class).communitysearch(c));
+				
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		
+	}
 	
 	
 }
