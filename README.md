@@ -21,8 +21,12 @@
 이미지를 누르면 해당 판매 사이트로 이동하게 되어있습니다.
 # 프로젝트 개발일정
 
+![개발일정](https://user-images.githubusercontent.com/107026915/187835163-3fb997e3-f5ad-4304-8b8b-4525e78ec197.png)
+
 
 # 프로젝트에서 사용된 데이터 베이스
 
+![데이터 베이스](https://user-images.githubusercontent.com/107026915/187835152-04aa231d-56a0-46ba-94f1-f7b423564a36.png)
 
 # 프로젝트 참조 자료
+디자인 및 사진자료 참조 : 애니플러스 https://www.aniplustv.com/
