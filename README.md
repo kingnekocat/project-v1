@@ -30,3 +30,5 @@
 
 # 프로젝트 참조 자료
 디자인 및 사진자료 참조 : 애니플러스 https://www.aniplustv.com/
+디자인 및 사진자료 참조 : 피규어프레소 https://figurepresso.com/
+
